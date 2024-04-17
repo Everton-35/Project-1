@@ -1,0 +1,164 @@
+/* Asterisk wildcard selector to  overide default styles added by the browser */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+/*background-color: grey; */
+
+min-height: 100vh;
+display: flex;
+ flex-direction: column;
+}
+
+header {
+background-color: green;
+color: red;
+}
+
+form {
+	width: 50%;
+	margin-left: 25%;
+	height: 200px;
+	font-size: 2rem;
+}
+
+fieldset  > input {
+	font-size: 1rem;
+}
+
+button {
+	background-color: blue;
+	color: pink;
+	font-size: 2rem;
+}
+
+button:hover {
+	color: blue;
+	background-color: pink;
+	
+}
+
+label {
+	font-size: 2rem;
+}
+
+h1 {
+	font-size: 4rem;
+}
+
+
+a:hover {
+	color: blue;
+	background-color: pink;
+}
+a {
+	background-color: blue;
+	color: pink;
+}
+
+.subhead {
+	text-align : center;
+	background-color :  darkred;
+	color: yellow;
+	
+}
+
+.textboxes {
+	width: 30%;
+	display: inline-block;
+}
+
+.hero {
+	width: 100%;
+	
+}
+
+
+
+
+
+/* Donated code that will enable the boxes to move into place as  the window is resized  
+
+   .flex-container {
+        display: flex;
+        
+        height: auto;
+		width: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+       justify-content: center; 
+      }
+
+      .flex-container > div {
+        background-color: #f1f1f1;
+        margin: 10px;
+        padding: 10px;
+        font-size: 100px;
+        flex-basis: auto;
+      }
+	  
+	End of donated code  */
+	  
+	  
+
+main {
+/* make main element take up any surplus space to push footer down  CODE frm LOVE RUNNING*/
+flex: 1 0 auto;
+}
+
+
+footer {
+background-color: brown;
+color: white;
+}
+footer h3 {
+	text-align: center;
+}
+
+li{
+	display: inline-block;
+	margin-left: 10px;
+}
+
+article {
+	background-color: darkred;
+color: white;
+width: 30%;
+border: 2px solid white;
+margin-left: 5px;
+
+}
+
+article  h3{
+	text-align: center;
+
+}
+
+/* puts the section boxes side by side 
+section {
+	display: flex;
+	flex-wrap: wrap;
+}
+*/
+
+ @media screen and (max-width: 768px) {
+  .flex-container {
+        display: flex;
+        
+     
+        flex-wrap: wrap;
+		
+		flex-direction: column;
+		
+		
+      }
+
+.textboxes {
+	margin-left: 33%;
+}
+	  
+	  
+ }  /* end of media query */
